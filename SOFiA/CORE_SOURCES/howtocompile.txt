@@ -1,0 +1,89 @@
+/// ASAR Research Group
+ 
+Cologne University of Applied Sciences
+Technical University of Berlin
+Deutsche Telekom Laboratories
+WDR Westdeutscher Rundfunk
+
+
+This is a short guide how to compile the SOFiA sources (MEX). 
+
+The toolbox releases come with PRECOMPILED CORES for Windows Matlab 32bit and 64bit and MAC OS-X. Using one of these operating systems you do not have to compile the cores (at least if you do not want to make any changes to the sourcecode).
+
+
+Your need to compile the core:
+
+	1. MATLAB e.g. 2010 or 2011 (it also should work with older versions)
+
+	2. A C++ Compiler (e.g. Microsoft Visual C++ 2008 Express for Windows)
+
+	3. The BOOST C++ Library, get it at http://www.boost.org/
+
+
+- Install the C++ Compiler. 
+
+- Place the BOOST Library to the folder: /MATLAB/Rxxxx/extern/include/ 
+  ...way that the compiler can find the path "/MATLAB/Rxxxx/extern/include/boost/math/...".
+
+- Type "> mex -setup" in Matlab and select the C++ compiler.
+
+
+Once everything is placed, you are ready to compile the core:
+
+Navigate to the SOFiA\CORE_SOURCES folder.
+type "> sofia_buildAll" and all source files will be compiled into the SOFiA folder.
+
+(Thanx to Nils Peters for the wonderful build-script)
+
+
+Enjoy and best regards,
+bBrn
+
+
+
+
+
+CONTACT AND LICENSE INFORMATION --------------------------------
+
+
+/// ASAR Research Group 
+ 
+    [1] Cologne University of Applied Sciences
+    [2] Technical University of Berlin 
+    [3] Deutsche Telekom Laboratories 
+    [4] WDR Westdeutscher Rundfunk 
+
+SOFiA sound field analysis
+
+Copyright (C)2011 bBrn - benjamin Bernschütz [1,2] et al.(§)   
+
+Contact ------------------------------------
+Cologne University of Applied Sciences 
+Institute of Communication Systems
+Betzdorfer Street 2
+D-50679 Germany (Europe)
+
+phone       +49 221 8275 -2496 
+cell phone  +49 171 4176069 
+mail        rockzentrale 'at' me.com 
+--------------------------------------------
+
+This file is part of the SOFiA sound field analysis toolbox
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program. If not, see <http://www.gnu.org/licenses/>.
+
+
+(§) Christoph Pörschmann [1]   christoph.poerschmann 'at' fh-koeln.de
+    Sascha Spors         [2,3] sascha.spors 'at' telekom.de  
+    Stefan Weinzierl     [2]   stefan.weinzierl 'at' tu-berlin.de

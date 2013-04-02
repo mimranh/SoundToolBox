@@ -1,9 +1,11 @@
-/// ASAR Research Group
- 
+/// ASAR-MARA Research Group
+
 Cologne University of Applied Sciences
-Technical University of Berlin
+Berlin University of Technology
+University of Rostock
 Deutsche Telekom Laboratories
 WDR Westdeutscher Rundfunk
+IOSONO GmbH
 
 
 This is a short guide how to compile the SOFiA sources (MEX). 
@@ -13,7 +15,7 @@ The toolbox releases come with PRECOMPILED CORES for Windows Matlab 32bit and 64
 
 Your need to compile the core:
 
-	1. MATLAB e.g. 2010 or 2011 (it also should work with older versions)
+	1. MATLAB e.g. 2010 - 2013 (it also should work with older versions)
 
 	2. A C++ Compiler (e.g. Microsoft Visual C++ 2008 Express for Windows)
 
@@ -33,57 +35,54 @@ Once everything is placed, you are ready to compile the core:
 Navigate to the SOFiA\CORE_SOURCES folder.
 type "> sofia_buildAll" and all source files will be compiled into the SOFiA folder.
 
-(Thanx to Nils Peters for the wonderful build-script)
+(Thanx to Nils Peters for the build-script)
 
 
 Enjoy and best regards,
-bBrn
+Benjamin Bernschütz
 
 
 
-
-
-CONTACT AND LICENSE INFORMATION --------------------------------
-
-
-/// ASAR Research Group 
- 
-    [1] Cologne University of Applied Sciences
-    [2] Technical University of Berlin 
-    [3] Deutsche Telekom Laboratories 
-    [4] WDR Westdeutscher Rundfunk 
-
-SOFiA sound field analysis
-
-Copyright (C)2011 bBrn - benjamin Bernschütz [1,2] et al.(§)   
-
-Contact ------------------------------------
-Cologne University of Applied Sciences 
-Institute of Communication Systems
-Betzdorfer Street 2
-D-50679 Germany (Europe)
-
-phone       +49 221 8275 -2496 
-cell phone  +49 171 4176069 
-mail        rockzentrale 'at' me.com 
---------------------------------------------
-
-This file is part of the SOFiA sound field analysis toolbox
-
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program. If not, see <http://www.gnu.org/licenses/>.
-
-
-(§) Christoph Pörschmann [1]   christoph.poerschmann 'at' fh-koeln.de
-    Sascha Spors         [2,3] sascha.spors 'at' telekom.de  
-    Stefan Weinzierl     [2]   stefan.weinzierl 'at' tu-berlin.de
+% CONTACT AND LICENSE INFORMATION:
+%
+% /// ASAR-MARA Research Group
+%
+%     [1] Cologne University of Applied Sciences
+%     [2] Berlin University of Technology
+%     [3] Deutsche Telekom Laboratories
+%     [4] WDR Westdeutscher Rundfunk
+%     [5] University of Rostock
+%     [6] IOSONO GmbH
+%
+% SOFiA sound field analysis
+%
+% Copyright (C)2011-2013 Benjamin Bernschütz [1,2] et al.(§)
+%
+% Contact -------------------------------------
+% Cologne University of Applied Sciences
+% Institute of Communication Systems
+% Betzdorfer Street 2
+% D-50679 Germany (Europe)
+%
+% phone +49 221 8275 -2496
+% mail  benjamin.bernschuetz@fh-koeln.de
+% ---------------------------------------------
+%
+% This file is part of the SOFiA sound field analysis toolbox
+%
+% This program is free software: you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation, either version 3 of the License, or
+% (at your option) any later version.
+%
+% This program is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+%
+% You should have received a copy of the GNU General Public License
+% along with this program. If not, see <http://www.gnu.org/licenses/>.
+%
+% (§) Christoph Pörschmann [1]   christoph.poerschmann 'at' fh-koeln.de
+%     Stefan Weinzierl     [2]   stefan.weinzierl 'at' tu-berlin.de
+%     Sascha Spors         [5]   sascha.spors 'at' uni-rostock.de

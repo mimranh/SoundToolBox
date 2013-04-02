@@ -1,23 +1,24 @@
 /************************************************************************
-% 
-% /// ASAR Research Group 
-%   
+% /// ASAR-MARA Research Group
+%
 % Cologne University of Applied Sciences
-% Technical University of Berlin
+% Berlin University of Technology
+% University of Rostock
 % Deutsche Telekom Laboratories
 % WDR Westdeutscher Rundfunk
+% IOSONO GmbH
 % 
 % SOFiA sound field analysis
 % 
-% M/F Modal radial filters R11-1220
+% M/F Modal radial filters R13-0306
 %     Soft amplification limiting
 %     On-axis powerloss compensation with
 %     N0plc to N0 interpolation.
 % 
 % 
-% Copyright (C)2011 by bBrn - benjamin Bernschütz  
-%                            rockzentrale 'AT' me.com
-%                            +49 171 4176069 Germany  
+% Copyright (C)2011-2013 Benjamin Bernschütz  
+%                        rockzentrale 'at' me.com
+%                        +49 171 4176069 Germany  
 % 
 % Contributions to this version: Nils Peters (nils@icsi.berkeley.edu)
 % 
@@ -37,11 +38,11 @@
 %             ! If only one kr-vector is given using a Rigid/Dual Sphere  
 %             Configuration: kr_sphere = kr_mic 
 % ac          Array Configuration: 
-%             0  Open Sphere with p Transducers (NO plc!)
-%             1  Open Sphere with pGrad Transducers
-%             2  Rigid Sphere with p Transducers
-%             3  Rigid Sphere with pGrad Transducers (Thx to Nils Peters!)
-%             4  Dual Open Sphere with p Transducers (Thx to Nils Peters!)
+%             0  Open Sphere with pressure Transducers (NO plc!)
+%             1  Open Sphere with cardioid Transducers
+%             2  Rigid Sphere with pressure Transducers
+%             3  Rigid Sphere with cardioid Transducers (Thx to Nils Peters!)
+%             4  Dual Open Sphere with pressure Transducers (Thx to Nils Peters!)
 % a_max       Maximum modal amplification limit in [dB]
 % plc         OnAxis powerloss-compensation: 
 %             0  Off
@@ -53,49 +54,49 @@
 % 
 @ end of header
 %
-% CONTACT AND LICENSE INFORMATION:
-% 
-% /// ASAR Research Group 
-%  
+% % CONTACT AND LICENSE INFORMATION:
+%
+% /// ASAR-MARA Research Group
+%
 %     [1] Cologne University of Applied Sciences
-%     [2] Technical University of Berlin 
-%     [3] Deutsche Telekom Laboratories 
-%     [4] WDR Westdeutscher Rundfunk 
-% 
+%     [2] Berlin University of Technology
+%     [3] Deutsche Telekom Laboratories
+%     [4] WDR Westdeutscher Rundfunk
+%     [5] University of Rostock
+%     [6] IOSONO GmbH
+%
 % SOFiA sound field analysis
-% 
-% Copyright (C)2011 bBrn - benjamin Bernschütz [1,2] et al.(§)   
-% 
-% Contact ------------------------------------
-% Cologne University of Applied Sciences 
+%
+% Copyright (C)2011-2013 Benjamin Bernschütz [1,2] et al.(§)
+%
+% Contact -------------------------------------
+% Cologne University of Applied Sciences
 % Institute of Communication Systems
 % Betzdorfer Street 2
 % D-50679 Germany (Europe)
-% 
-% phone       +49 221 8275 -2496 
-% cell phone  +49 171 4176069 
-% mail        rockzentrale 'at' me.com 
-% --------------------------------------------
-% 
+%
+% phone +49 221 8275 -2496
+% mail  benjamin.bernschuetz@fh-koeln.de
+% ---------------------------------------------
+%
 % This file is part of the SOFiA sound field analysis toolbox
-% 
+%
 % This program is free software: you can redistribute it and/or modify
 % it under the terms of the GNU General Public License as published by
 % the Free Software Foundation, either version 3 of the License, or
 % (at your option) any later version.
-% 
+%
 % This program is distributed in the hope that it will be useful,
 % but WITHOUT ANY WARRANTY; without even the implied warranty of
 % MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 % GNU General Public License for more details.
-% 
+%
 % You should have received a copy of the GNU General Public License
 % along with this program. If not, see <http://www.gnu.org/licenses/>.
-% 
-% 
+%
 % (§) Christoph Pörschmann [1]   christoph.poerschmann 'at' fh-koeln.de
-%     Sascha Spors         [2,3] sascha.spors 'at' telekom.de  
 %     Stefan Weinzierl     [2]   stefan.weinzierl 'at' tu-berlin.de
+%     Sascha Spors         [5]   sascha.spors 'at' uni-rostock.de
 %     Nils Peters                nils 'at' icsi.berkley.edu
 % 
 ************************************************************************/
@@ -127,7 +128,7 @@ void mexFunction(int nlhs, mxArray *plhs[], int nrhs, const mxArray *prhs[])
    complex<double> **OutputArray;   
 
    #ifndef DEBUG
-    mexPrintf("SOFiA M/F - Modal radial filters R11-1220\n");
+    mexPrintf("SOFiA M/F - Modal radial filters R13-0306\n");
    #endif
    
    if(nrhs<3) {mexErrMsgIdAndTxt("SOFiA:MF:notEnoughInputs",

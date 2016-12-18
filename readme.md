@@ -39,7 +39,7 @@ and Windows PC 32/64bit. (1) must be accessible, some need data
 from the ARRAY_DATASETS folder (3). 
 
 Best regards, 
-Benjamin Bernschütz
+Benjamin BernschÃ¼tz
 
 
 
@@ -59,7 +59,7 @@ CONTACT AND LICENSE INFORMATION --------------------------------
 %
 % SOFiA sound field analysis
 %
-% Copyright (C)2011-2013 Benjamin Bernschütz [1,2] et al.(§)
+% Copyright (C)2011-2013 Benjamin BernschÃ¼tz [1,2] et al.(Â§)
 %
 % Contact -------------------------------------
 % Cologne University of Applied Sciences
@@ -86,6 +86,6 @@ CONTACT AND LICENSE INFORMATION --------------------------------
 % You should have received a copy of the GNU General Public License
 % along with this program. If not, see <http://www.gnu.org/licenses/>.
 %
-% (§) Christoph Pörschmann [1]   christoph.poerschmann 'at' fh-koeln.de
+% (Â§) Christoph PÃ¶rschmann [1]   christoph.poerschmann 'at' fh-koeln.de
 %     Stefan Weinzierl     [2]   stefan.weinzierl 'at' tu-berlin.de
 %     Sascha Spors         [5]   sascha.spors 'at' uni-rostock.de
